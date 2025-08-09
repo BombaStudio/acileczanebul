@@ -14,7 +14,7 @@
         <form method="GET" action="{{ route('eczane.index') }}" class="flex flex-col md:flex-row gap-4 mb-6">
             <input type="text" name="il" value="{{ old('il', $il) }}" placeholder="İl (Örn: Ankara)" required
                    class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 outline-none">
-            <input type="text" name="ilce" value="{{ old('ilce', $ilce) }}" placeholder="İlçe (Örn: Yenimahalle)" required
+            <input type="text" name="ilce" value="{{ old('ilce', $ilce) }}" placeholder="İlçe (Örn: Yenimahalle)" 
                    class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 outline-none">
             <button type="submit"
                     class="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">

@@ -24,6 +24,18 @@ class PharmacyController extends Controller
                 $eczaneler = $response->json()['result'] ?? [];
             }
         }
+        else if ($request->filled(['il'])) {
+            $response = Http::withHeaders([
+                'authorization' => 'apikey ' . env('COLLECT_API_KEY'),
+                'content-type'  => 'application/json',
+            ])->get('https://api.collectapi.com/health/dutyPharmacy', [
+                'il'   => $request->il
+            ]);
+
+            if ($response->successful()) {
+                $eczaneler = $response->json()['result'] ?? [];
+            }
+        }
 
         return view('eczane', [
             'eczaneler' => $eczaneler,
