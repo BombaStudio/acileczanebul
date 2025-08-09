@@ -26,7 +26,7 @@ Toplumun sağlık hizmetlerine erişimini kolaylaştırmak ve acil durumlarda ha
 ## Demo
 
 Uygulamayı canlı olarak deneyebilirsiniz:  
-[https://acileczanebul-57w55sc8r-theemirs-projects.vercel.app/](https://acileczanebul-57w55sc8r-theemirs-projects.vercel.app/)
+[https://acileczanebul.vercel.app/](https://acileczanebul.vercel.app/)
 
 ---
 
